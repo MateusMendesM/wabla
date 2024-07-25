@@ -1,0 +1,342 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:wght@100..900&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: rgb(34, 34, 34);
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    border-bottom: 2px solid white;
+    background-image: url(../img/banner\ header.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.profile {
+    position: relative;
+    top: 50%;
+    left: 10%;
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-image: url(../img/profile\ wabla.png);
+    background-position: center center;
+    background-size: contain;
+}
+
+.profile:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+
+@keyframes wablaAnimation {
+    0% {
+        rotate: 0deg;
+        transform: scale(1);
+    }
+
+    33% {
+        rotate: 0.5deg;
+        transform: scale(1.03);
+    }
+
+    66% {
+        rotate: 1deg;
+        transform: scale(1.06);
+    }
+
+    100% {
+        rotate: 1deg;
+        transform: scale(1.1);
+    }
+}
+
+.content-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100vw - 200px);
+}
+
+.content-header a {
+    margin: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+.content-header a:hover {
+    animation: wablaAnimation 2s forwards;
+}
+
+.nav-header {
+    background-color: rgba(34, 34, 34, 0.7);
+    padding: 2px 20px;
+    margin: -2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.nav-header a {
+    color: white;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+}
+
+.btn-responsive {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    background-color: white;
+}
+
+.last-loop {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(43, 43, 43);
+    border-bottom: 2px solid white;
+}
+
+.last-loop h1 {
+    color: white;
+    margin: 30px;
+}
+
+.last-loop iframe {
+    border-radius: 10px;
+}
+
+.loop-video {
+    margin-bottom: 40px;
+}
+
+.others-loops {
+    width: 85%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.others-loops h1 {
+    font-size: 30px;
+    margin: 20px;
+}
+
+.loops {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.loop iframe {
+    width: 500px;
+    height: 600px;
+    background-color: blue;
+    margin: 30px 20px;
+    border-radius: 20px;
+    border: 4px solid #333;
+}
+
+.loops-btn {
+    font-size: 20px;
+    background-color: rgb(43, 43, 43);
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 10px;
+    margin: 20px 20px 40px 20px;
+}
+
+.loops-btn a {
+    color: white;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid white;
+    background-image: url(../img/banner\ header.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(34, 34, 34);
+}
+
+footer h3 {
+    font-size: 30px;
+    margin: 10px;
+    color: white;
+}
+
+.texto-footer {
+    width: 40%;
+    text-align: justify;
+    margin-bottom: 20px;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgba(43, 43, 43, 0.7);
+    font-family: "Inter", sans-serif;
+}
+
+.texto-footer a {
+    text-decoration: underline;
+    color: rgba(197, 197, 197, 0.856);
+}
+
+.nav-footer {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.nav-footer ul {
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.links-footer {
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(43, 43, 43);
+}
+
+.links-footer a {
+    color: white;
+}
+
+.mobile-btn, .nav-mobile, .close-btn {
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        position: fixed;
+    }
+    main {
+        padding-top: 100px;
+    }
+    .nav-header {
+        display: none;
+    }
+    .profile {
+        position: relative;
+        top: 10%;
+        left: 10%;
+        width: 80px;
+        height: 80px;
+        margin-right: 20px;
+        border: 2px solid white;
+        border-radius: 50%;
+        background-image: url(../img/profile\ wabla.png);
+        background-position: center center;
+        background-size: contain;
+    }
+
+    .content-header {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .content-header a:hover {
+        animation: none;
+    }
+    .mobile-btn, .close-btn {
+        position: absolute;
+        right: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        background-color: #333;
+        color: #fff;
+        border: 2px solid white;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    .close-btn {
+        top: -71px;
+        right: 104px;
+    }
+
+    .nav-mobile {
+        display: none;
+        flex-direction: row;
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        justify-content: space-evenly;
+        text-align: center;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #333;
+        border: 2px solid white;
+        border-top: none;
+    }
+
+    .nav-mobile a {
+        padding: 20px;
+        width: 30%;
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        margin: 0;
+    }
+
+    .loop iframe {
+        width: 90%;
+        height: 450px;
+        background-color: blue;
+        margin: 30px 20px;
+        border-radius: 20px;
+        border: 4px solid #333;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .last-loop iframe {
+        width: 400px;
+    }
+}
