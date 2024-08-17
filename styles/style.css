@@ -323,6 +323,7 @@ footer h3 {
         text-decoration: none;
         display: block;
         margin: 0;
+        font-size: 20px;
     }
 
     .loop iframe {
@@ -338,5 +339,41 @@ footer h3 {
 @media screen and (max-width: 600px) {
     .last-loop iframe {
         width: 400px;
+    }
+    .content-header a {
+        font-size: 22px;
+        padding-left: 5px;
+    }
+    .texto-footer {
+        width: 380px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .profile {
+        width: 70px;
+        height: 70px;
+        top: 15%;
+        left: 5%;
+    }
+    .content-header a {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    .nav-mobile a {
+        font-size: 18.7px;
+    }
+    .last-loop iframe {
+        width: 370px;
+    }
+    .texto-footer {
+        width: 350px;
+    }
+    .nav-footer ul {
+        gap: 10px;
+    }
+    .links-footer {
+        padding-inline: 10px;
+        height: 40px;
     }
 }
