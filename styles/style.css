@@ -376,4 +376,25 @@ footer h3 {
         padding-inline: 10px;
         height: 40px;
     }
+    .nav-mobile {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .profile {
+        width: 60px;
+        height: 60px;
+        top: 20%;
+    }
+    .content-header a {
+        font-size: 18px;
+        padding-left: 21px;
+    }
+    .nav-mobile {
+        margin-left: 40px;
+    }
+    .nav-mobile a {
+        font-size: 14px;
+    }
 }
