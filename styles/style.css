@@ -381,7 +381,7 @@ footer h3 {
     }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 379px) {
     .profile {
         width: 60px;
         height: 60px;
