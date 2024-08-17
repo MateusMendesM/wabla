@@ -349,7 +349,7 @@ footer h3 {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .profile {
         width: 70px;
         height: 70px;
@@ -381,7 +381,7 @@ footer h3 {
     }
 }
 
-@media screen and (max-width: 379px) {
+@media screen and (max-width: 400px) {
     .profile {
         width: 60px;
         height: 60px;
